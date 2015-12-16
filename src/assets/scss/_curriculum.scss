@@ -1,0 +1,161 @@
+
+//Menu
+//0- Variables globales
+//1- Panneau bleu ciel
+//2. Menu masque pour mobile
+
+
+
+//Variables globales
+//------------------
+$bleuCiel: #28a5ff !default;
+
+//Etiquettes
+//----------
+
+.etendu {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  background: #2199e8;
+  color: #fff;
+}
+
+//1. Panneau bleu ciel
+//--------------------
+.panneauBleuCiel {
+  @include callout($color: $bleuCiel);
+  margin: 5px;
+  a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.panneauGrisClair {
+  @include callout($color: $light-gray);
+  margin: 5px;
+  a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.panneauVertClair {
+  background: rgba(0, 255, 127, 0.08);
+  padding: 0.3rem;
+}
+
+// Menu lateral
+//--------------
+.sous-menu-texte {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #999;
+  font-weight: bold;
+  line-height: 1;
+  padding-left: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+
+//2. Menu masque pour mobile
+//--------------------------
+.menu-masque {, ul {
+  background: $black;
+  color: #fefefe;
+  padding: 0.5rem;
+  a {
+    color: #fefefe;
+  }
+  i {
+    margin-right: 10px;
+  }
+  hr {
+    max-width: 75rem;
+    height: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cacaca;
+    margin: 0.25rem auto;
+    clear: both;
+  }
+  .is-drilldown-sub {
+    background: $black;
+  }
+  .js-drilldown-back::before {
+    border-color: transparent $white transparent transparent;
+  }
+  .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent $white;
+  }
+}
+}
+
+#menu-masque-droit, #menu-masque-gauche{
+  min-height: 100%;
+}
+
+.sous-titre {
+  margin: 0 0 1rem;
+  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  p {
+    line-height: 1.6;
+    color: #8a8a8a;
+  }
+}
+
+.menu-masque-texte {
+  padding-left:5px;
+  background-color: #777777;
+  text-transform: uppercase;
+  font-weight: 700;
+  list-style: none;
+}
+
+//Positionnement
+//----------------
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  left: 0; }
+
+
+// Style
+//--------
+.fully {
+  background-image: url("http://localhost:8000/assets/img/Accueil.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: table;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.mbr {
+  display: table-cell;
+  height: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.pied-page{
+  background:#0a0a0a;
+  color:#fefefe;
+  padding:0.5rem;
+  font-size: 0.75rem;
+}

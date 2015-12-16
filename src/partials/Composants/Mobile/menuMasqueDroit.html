@@ -1,0 +1,53 @@
+<div class="menu-masque off-canvas position-right " id="menu-masque-droit" data-off-canvas
+     data-position="right">
+    <!--Bouton de fermeture-->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <!--Menu vertical-->
+    <ul class="menu vertical">
+
+        <!--Liens menu lateral Mobile-->
+        {{#ifpage 'Presentation'}}<!--Liens Page PRESENTATION Mobile-->
+        {{> liensMenuLateralMobilePresentation}}
+        {{/ifpage}}
+
+        {{#ifpage 'Sixieme'}}<!--Liens Page Sixieme-->
+        {{> liensMenuLateralMobileSixieme}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module1'}}<!--Liens Page Module1-->
+        {{> liensMenuLateralMobileModule1}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module2'}}<!--Liens Page Module2-->
+        {{> liensMenuLateralMobileModule2}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module3'}}<!--Liens Page Module3-->
+        {{> liensMenuLateralMobileModule3}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module4'}}<!--Liens Page Module4-->
+        {{> liensMenuLateralMobileModule4}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module5'}}<!--Liens Page Module4-->
+        {{> liensMenuLateralMobileModule5}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module6'}}<!--Liens Page Module4-->
+        {{> liensMenuLateralMobileModule6}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module7'}}<!--Liens Page Module4-->
+        {{> liensMenuLateralMobileModule7}}
+        {{/ifpage}}
+
+        {{#ifpage 'Module8'}}<!--Liens Page Module4-->
+        {{> liensMenuLateralMobileModule8}}
+        {{/ifpage}}
+
+    </ul>
+</div>
+

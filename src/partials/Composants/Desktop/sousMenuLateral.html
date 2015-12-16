@@ -1,0 +1,61 @@
+<div class="hide-for-small-only columns medium-3 right" data-sticky-container>
+    <div class="sticky" data-sticky data-top-anchor='contenu-principal'
+         data-btm-anchor='contenu-principal:bottom'>
+        <!--Menu de la page-->
+        <ul class="tabs vertical" data-magellan>
+
+            <!--Liens menu lateral-->
+            {{#ifpage 'Presentation'}}<!--Liens Page PRESENTATION-->
+            {{> liensMenuLateralPresentation}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module1' 'Module2' 'Module3' 'Module4' 'Module5' 'Module6' 'Module7' 'Module8'}}<!--Liens Page MODULE1-->
+            {{> liensMenuLateralModule}}
+            {{/ifpage}}
+
+        </ul>
+        <!--Ressources-->
+        <ul class="menu vertical" data-magellan>
+            <!--Liens menu lateral-->
+            {{#ifpage 'Sixieme'}}<!--Liens Page Sixieme-->
+            {{> liensRessourcesSixieme}}
+            {{/ifpage}}
+
+            {{#ifpage 'Cinquieme'}}<!--Liens Page Cinquieme-->
+            {{> liensRessourcesCinquieme}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module1' }}<!--Liens Page Module1-->
+            {{> liensRessourcesModule1}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module2' }}<!--Liens Page module2-->
+            {{> liensRessourcesModule2}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module3' }}<!--Liens Page module3-->
+            {{> liensRessourcesModule3}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module4' }}<!--Liens Page module4-->
+            {{> liensRessourcesModule4}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module5' }}<!--Liens Page module5-->
+            {{> liensRessourcesModule5}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module6' }}<!--Liens Page module6-->
+            {{> liensRessourcesModule6}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module7' }}<!--Liens Page module7-->
+            {{> liensRessourcesModule7}}
+            {{/ifpage}}
+
+            {{#ifpage 'Module8' }}<!--Liens Page module4-->
+            {{> liensRessourcesModule8}}
+            {{/ifpage}}
+        </ul>
+    </div>
+</div>
